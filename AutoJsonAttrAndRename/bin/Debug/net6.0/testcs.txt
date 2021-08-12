@@ -1,0 +1,1179 @@
+using Newtonsoft.Json;
+
+namespace EpicAkSCloudSolutions.Classes
+{
+    public class  SpotifyAccessToken
+    {
+        [JsonProperty("")]
+        public string? access_token { get; set; }
+
+        [JsonProperty("")]
+        public string? token_type { get; set; }
+
+        [JsonProperty("")]
+        public string? scope { get; set; }
+
+        [JsonProperty("")]
+        public string? expires_in { get; set; }
+
+        [JsonProperty("")]
+        public string? refresh_token { get; set; }
+    }
+
+    public class  AlbumObject
+    {
+        [JsonProperty("")]
+        public string? album_type { get; set; }
+
+        [JsonProperty("")]
+        public ArtistObject[]? artists { get; set; }
+
+        [JsonProperty("")]
+        public string[]? available_markets { get; set; }
+
+        [JsonProperty("")]
+        public CopyrightObject[]? copyrights { get; set; }
+
+        [JsonProperty("")]
+        public ExternalIdObject? external_ids { get; set; }
+
+        [JsonProperty("")]
+        public ExternalUrlObject? external_urls { get; set; }
+
+        [JsonProperty("")]
+        public string[]? genres { get; set; }
+
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public string? id { get; set; }
+
+        [JsonProperty("")]
+        public ImageObject[]? images { get; set; }
+
+        [JsonProperty("")]
+        public string? label { get; set; }
+
+        [JsonProperty("")]
+        public string? name { get; set; }
+
+        [JsonProperty("")]
+        public int popularity { get; set; }
+
+        [JsonProperty("")]
+        public string? release_date { get; set; }
+
+        [JsonProperty("")]
+        public string? release_date_precision { get; set; }
+
+        [JsonProperty("")]
+        public AlbumRestrictionObject? restrictions { get; set; }
+
+        [JsonProperty("")]
+        public SimplifiedTrackObject[]? tracks { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+
+        [JsonProperty("")]
+        public string? uri { get; set; }
+    }
+
+    public class  AlbumRestrictionObject
+    {
+        [JsonProperty("")]
+        public string? reason { get; set; }
+    }
+
+    public class  ArtistObject
+    {
+        [JsonProperty("")]
+        public ExternalUrlObject? external_urls { get; set; }
+
+        [JsonProperty("")]
+        public FollowersObject? followers { get; set; }
+
+        [JsonProperty("")]
+        public string[]? genres { get; set; }
+
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public string? id { get; set; }
+
+        [JsonProperty("")]
+        public ImageObject[]? images { get; set; }
+
+        [JsonProperty("")]
+        public string? name { get; set; }
+
+        [JsonProperty("")]
+        public int popularity { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+
+        [JsonProperty("")]
+        public string? uri { get; set; }
+    }
+
+    public class  AudioFeaturesObject
+    {
+        [JsonProperty("")]
+        public float acousticness { get; set; }
+
+        [JsonProperty("")]
+        public string? analysis_url { get; set; }
+
+        [JsonProperty("")]
+        public float danceability { get; set; }
+
+        [JsonProperty("")]
+        public int duration_ms { get; set; }
+
+        [JsonProperty("")]
+        public float energy { get; set; }
+
+        [JsonProperty("")]
+        public string? id { get; set; }
+
+        [JsonProperty("")]
+        public float instrumentalness { get; set; }
+
+        [JsonProperty("")]
+        public int key { get; set; }
+
+        [JsonProperty("")]
+        public float liveness { get; set; }
+
+        [JsonProperty("")]
+        public float loudness { get; set; }
+
+        [JsonProperty("")]
+        public int mode { get; set; }
+
+        [JsonProperty("")]
+        public float speechiness { get; set; }
+
+        [JsonProperty("")]
+        public float tempo { get; set; }
+
+        [JsonProperty("")]
+        public int time_signature { get; set; }
+
+        [JsonProperty("")]
+        public string? track_href { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+
+        [JsonProperty("")]
+        public string? uri { get; set; }
+
+        [JsonProperty("")]
+        public float valence { get; set; }
+    }
+
+    public class  CategoryObject
+    {
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public ImageObject[]? icons { get; set; }
+
+        [JsonProperty("")]
+        public string? id { get; set; }
+
+        [JsonProperty("")]
+        public string? name { get; set; }
+    }
+
+    public class  ContextObject
+    {
+        [JsonProperty("")]
+        public ExternalUrlObject? external_urls { get; set; }
+
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+
+        [JsonProperty("")]
+        public string? uri { get; set; }
+    }
+
+    public class  CopyrightObject
+    {
+        [JsonProperty("")]
+        public string? text { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+    }
+
+    public class  CurrentlyPlayingContextObject
+    {
+        [JsonProperty("")]
+        public DisallowsObject? actions { get; set; }
+
+        [JsonProperty("")]
+        public ContextObject? context { get; set; }
+
+        [JsonProperty("")]
+        public string? currently_playing_type { get; set; }
+
+        [JsonProperty("")]
+        public DeviceObject? device { get; set; }
+
+        [JsonProperty("")]
+        public bool is_playing { get; set; }
+
+        [JsonProperty("")]
+        public object? item { get; set; }
+
+        [JsonProperty("")]
+        public int progress_ms { get; set; }
+
+        [JsonProperty("")]
+        public string? repeat_state { get; set; }
+
+        [JsonProperty("")]
+        public string? shuffle_state { get; set; }
+
+        [JsonProperty("")]
+        public int timestamp { get; set; }
+    }
+
+    public class  CurrentlyPlayingObject
+    {
+        [JsonProperty("")]
+        public ContextObject? context { get; set; }
+
+        [JsonProperty("")]
+        public string? currently_playing_type { get; set; }
+
+        [JsonProperty("")]
+        public bool is_playing { get; set; }
+
+        [JsonProperty("")]
+        public object? item { get; set; }
+
+        [JsonProperty("")]
+        public int progress_ms { get; set; }
+
+        [JsonProperty("")]
+        public int timestamp { get; set; }
+    }
+
+    public class  CursorObject
+    {
+        [JsonProperty("")]
+        public string? after { get; set; }
+    }
+
+    public class  CursorPagingObject
+    {
+        [JsonProperty("")]
+        public CursorObject? cursors { get; set; }
+
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public Object[]? items { get; set; }
+
+        [JsonProperty("")]
+        public int limit { get; set; }
+
+        [JsonProperty("")]
+        public string? next { get; set; }
+
+        [JsonProperty("")]
+        public int total { get; set; }
+    }
+
+    public class  DeviceObject
+    {
+        [JsonProperty("")]
+        public string? id { get; set; }
+
+        [JsonProperty("")]
+        public bool is_active { get; set; }
+
+        [JsonProperty("")]
+        public bool is_private_session { get; set; }
+
+        [JsonProperty("")]
+        public bool is_restricted { get; set; }
+
+        [JsonProperty("")]
+        public string? name { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+
+        [JsonProperty("")]
+        public int volume_percent { get; set; }
+    }
+
+    public class  DevicesObject
+    {
+        [JsonProperty("")]
+        public DeviceObject[]? devices { get; set; }
+    }
+
+    public class  DisallowsObject
+    {
+        [JsonProperty("")]
+        public bool interrupting_playback { get; set; }
+
+        [JsonProperty("")]
+        public bool pausing { get; set; }
+
+        [JsonProperty("")]
+        public bool resuming { get; set; }
+
+        [JsonProperty("")]
+        public bool seeking { get; set; }
+
+        [JsonProperty("")]
+        public bool skipping_next { get; set; }
+
+        [JsonProperty("")]
+        public bool skipping_prev { get; set; }
+
+        [JsonProperty("")]
+        public bool toggling_repeat_context { get; set; }
+
+        [JsonProperty("")]
+        public bool toggling_repeat_track { get; set; }
+
+        [JsonProperty("")]
+        public bool toggling_shuffle { get; set; }
+
+        [JsonProperty("")]
+        public bool transferring_playback { get; set; }
+    }
+
+    public class  EpisodeObject
+    {
+        [JsonProperty("")]
+        public string? audio_preview_url { get; set; }
+
+        [JsonProperty("")]
+        public string? description { get; set; }
+
+        [JsonProperty("")]
+        public int duration_ms { get; set; }
+
+        [JsonProperty("")]
+        public bool @explicit { get; set; }
+
+        [JsonProperty("")]
+        public ExternalUrlObject? external_urls { get; set; }
+
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public string? id { get; set; }
+
+        [JsonProperty("")]
+        public ImageObject[]? images { get; set; }
+
+        [JsonProperty("")]
+        public bool is_externally_hosted { get; set; }
+
+        [JsonProperty("")]
+        public bool is_playable { get; set; }
+
+        [JsonProperty("")]
+        public string? language { get; set; }
+
+        [JsonProperty("")]
+        public string[]? languages { get; set; }
+
+        [JsonProperty("")]
+        public string? name { get; set; }
+
+        [JsonProperty("")]
+        public string? release_date { get; set; }
+
+        [JsonProperty("")]
+        public string? release_date_precision { get; set; }
+
+        [JsonProperty("")]
+        public ResumePointObject? resume_point { get; set; }
+
+        [JsonProperty("")]
+        public SimplifiedShowObject? show { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+
+        [JsonProperty("")]
+        public string? uri { get; set; }
+    }
+
+    public class  ErrorObject
+    {
+        [JsonProperty("")]
+        public string? message { get; set; }
+
+        [JsonProperty("")]
+        public int status { get; set; }
+    }
+
+    public class  ExplicitContentSettingsObject
+    {
+        [JsonProperty("")]
+        public bool filter_enabled { get; set; }
+
+        [JsonProperty("")]
+        public bool filter_locked { get; set; }
+    }
+
+    public class  ExternalIdObject
+    {
+        [JsonProperty("")]
+        public string? ean { get; set; }
+
+        [JsonProperty("")]
+        public string? isrc { get; set; }
+
+        [JsonProperty("")]
+        public string? upc { get; set; }
+    }
+
+    public class  ExternalUrlObject
+    {
+        [JsonProperty("")]
+        public string? spotify { get; set; }
+    }
+
+    public class  FollowersObject
+    {
+
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public int total { get; set; }
+    }
+
+    public class  ImageObject
+    {
+        [JsonProperty("")]
+        public int height { get; set; }
+
+        [JsonProperty("")]
+        public string? url { get; set; }
+
+        [JsonProperty("")]
+        public int width { get; set; }
+    }
+
+    public class  LinkedTrackObject
+    {
+        [JsonProperty("")]
+        public ExternalUrlObject? external_urls { get; set; }
+
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public string? id { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+
+        [JsonProperty("")]
+        public string? uri { get; set; }
+    }
+
+    public class  PagingObject
+    {
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public Object[]? items { get; set; }
+
+        [JsonProperty("")]
+        public int limit { get; set; }
+
+        [JsonProperty("")]
+        public string? next { get; set; }
+
+        [JsonProperty("")]
+        public int offset { get; set; }
+
+        [JsonProperty("")]
+        public string? previous { get; set; }
+
+        [JsonProperty("")]
+        public int total { get; set; }
+    }
+
+    public class  PlayHistoryObject
+    {
+        [JsonProperty("")]
+        public ContextObject? context { get; set; }
+
+        [JsonProperty("")]
+        public string? played_at { get; set; }
+
+        [JsonProperty("")]
+        public SimplifiedTrackObject? track { get; set; }
+    }
+
+    public class  PlayerErrorObject
+    {
+        [JsonProperty("")]
+        public string? message { get; set; }
+
+        [JsonProperty("")]
+        public string? reason { get; set; }
+
+        [JsonProperty("")]
+        public int status { get; set; }
+    }
+
+    public class  PlaylistObject
+    {
+        [JsonProperty("")]
+        public bool collaborative { get; set; }
+
+        [JsonProperty("")]
+        public string? description { get; set; }
+
+        [JsonProperty("")]
+        public ExternalUrlObject? external_urls { get; set; }
+
+        [JsonProperty("")]
+        public FollowersObject? followers { get; set; }
+
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public string? id { get; set; }
+
+        [JsonProperty("")]
+        public ImageObject[]? images { get; set; }
+
+        [JsonProperty("")]
+        public string? name { get; set; }
+
+        [JsonProperty("")]
+        public PublicUserObject? owner { get; set; }
+
+        [JsonProperty("")]
+        public bool @public { get; set; }
+
+        [JsonProperty("")]
+        public string? snapshot_id { get; set; }
+
+        [JsonProperty("")]
+        public PlaylistTrackObject[]? tracks { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+
+        [JsonProperty("")]
+        public string? uri { get; set; }
+    }
+
+    public class  PlaylistTrackObject
+    {
+        [JsonProperty("")]
+        public string? added_at { get; set; }
+
+        [JsonProperty("")]
+        public PublicUserObject? added_by { get; set; }
+
+        [JsonProperty("")]
+        public bool is_local { get; set; }
+
+        [JsonProperty("")]
+        public object? track { get; set; }
+    }
+
+    public class  PlaylistTracksRefObject
+    {
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public int total { get; set; }
+    }
+
+    public class SpotifyUserObject
+    {
+        [JsonProperty("")]
+        public string? country { get; set; }
+
+        [JsonProperty("")]
+        public string? display_name { get; set; }
+
+        [JsonProperty("")]
+        public string? email { get; set; }
+
+        [JsonProperty("")]
+        public ExplicitContentSettingsObject? explicit_content { get; set; }
+
+        [JsonProperty("")]
+        public ExternalUrlObject? external_urls { get; set; }
+
+        [JsonProperty("")]
+        public FollowersObject? followers { get; set; }
+
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public string? id { get; set; }
+
+        [JsonProperty("")]
+        public ImageObject[]? images { get; set; }
+
+        [JsonProperty("")]
+        public string? product { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+
+        [JsonProperty("")]
+        public string? uri { get; set; }
+    }
+
+    public class  PublicUserObject
+    {
+        [JsonProperty("")]
+        public string? display_name { get; set; }
+
+        [JsonProperty("")]
+        public ExternalUrlObject? external_urls { get; set; }
+
+        [JsonProperty("")]
+        public FollowersObject? followers { get; set; }
+
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public string? id { get; set; }
+
+        [JsonProperty("")]
+        public ImageObject[]? images { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+
+        [JsonProperty("")]
+        public string? uri { get; set; }
+    }
+
+    public class  RecommendationSeedObject
+    {
+        [JsonProperty("")]
+        public int afterFilteringSize { get; set; }
+
+        [JsonProperty("")]
+        public int afterRelinkingSize { get; set; }
+
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public string? id { get; set; }
+
+        [JsonProperty("")]
+        public int initialPoolSize { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+    }
+
+    public class  RecommendationsObject
+    {
+        [JsonProperty("")]
+        public RecommendationSeedObject[]? seeds { get; set; }
+
+        [JsonProperty("")]
+        public SimplifiedTrackObject[]? tracks { get; set; }
+    }
+
+    public class  ResumePointObject
+    {
+        [JsonProperty("")]
+        public bool fully_played { get; set; }
+
+        [JsonProperty("")]
+        public int resume_position_ms { get; set; }
+    }
+
+    public class  SavedAlbumObject
+    {
+        [JsonProperty("")]
+        public string? added_at { get; set; }
+
+        [JsonProperty("")]
+        public AlbumObject? album { get; set; }
+    }
+
+    public class  SavedShowObject
+    {
+        [JsonProperty("")]
+        public string? added_at { get; set; }
+
+        [JsonProperty("")]
+        public SimplifiedShowObject? show { get; set; }
+    }
+
+    public class  SavedTrackObject
+    {
+        [JsonProperty("")]
+        public string? added_at { get; set; }
+
+        [JsonProperty("")]
+        public TrackObject? track { get; set; }
+    }
+
+    public class  ShowObject
+    {
+        [JsonProperty("")]
+        public string[]? available_markets { get; set; }
+
+        [JsonProperty("")]
+        public CopyrightObject[]? copyrights { get; set; }
+
+        [JsonProperty("")]
+        public string? description { get; set; }
+
+        [JsonProperty("")]
+        public SimplifiedEpisodeObject[]? episodes { get; set; }
+
+        [JsonProperty("")]
+        public bool @explicit { get; set; }
+
+        [JsonProperty("")]
+        public ExternalUrlObject? external_urls { get; set; }
+
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public string? id { get; set; }
+
+        [JsonProperty("")]
+        public ImageObject[]? images { get; set; }
+
+        [JsonProperty("")]
+        public bool is_externally_hosted { get; set; }
+
+        [JsonProperty("")]
+        public string[]? languages { get; set; }
+
+        [JsonProperty("")]
+        public string? media_type { get; set; }
+
+        [JsonProperty("")]
+        public string? name { get; set; }
+
+        [JsonProperty("")]
+        public string? publisher { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+
+        [JsonProperty("")]
+        public string? uri { get; set; }
+    }
+
+    public class  SimplifiedAlbumObject
+    {
+        [JsonProperty("")]
+        public string? album_group { get; set; }
+
+        [JsonProperty("")]
+        public string? album_type { get; set; }
+
+        [JsonProperty("")]
+        public SimplifiedArtistObject[]? artists { get; set; }
+
+        [JsonProperty("")]
+        public string[]? available_markets { get; set; }
+
+        [JsonProperty("")]
+        public ExternalUrlObject? external_urls { get; set; }
+
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public string? id { get; set; }
+
+        [JsonProperty("")]
+        public ImageObject[]? images { get; set; }
+
+        [JsonProperty("")]
+        public string? name { get; set; }
+
+        [JsonProperty("")]
+        public string? release_date { get; set; }
+
+        [JsonProperty("")]
+        public string? release_date_precision { get; set; }
+
+        [JsonProperty("")]
+        public AlbumRestrictionObject? restrictions { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+
+        [JsonProperty("")]
+        public string? uri { get; set; }
+    }
+
+    public class  SimplifiedArtistObject
+    {
+        [JsonProperty("")]
+        public ExternalUrlObject? external_urls { get; set; }
+
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public string? id { get; set; }
+
+        [JsonProperty("")]
+        public string? name { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+
+        [JsonProperty("")]
+        public string? uri { get; set; }
+    }
+
+    public class  SimplifiedEpisodeObject
+    {
+
+        [JsonProperty("")]
+        public string? audio_preview_url { get; set; }
+
+        [JsonProperty("")]
+        public string? description { get; set; }
+
+        [JsonProperty("")]
+        public int duration_ms { get; set; }
+
+        [JsonProperty("")]
+        public bool @explicit { get; set; }
+
+        [JsonProperty("")]
+        public ExternalUrlObject? external_urls { get; set; }
+
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public string? id { get; set; }
+
+        [JsonProperty("")]
+        public ImageObject[]? images { get; set; }
+
+        [JsonProperty("")]
+        public bool is_externally_hosted { get; set; }
+
+        [JsonProperty("")]
+        public bool is_playable { get; set; }
+
+        [JsonProperty("")]
+        public string? language { get; set; }
+
+        [JsonProperty("")]
+        public string[]? languages { get; set; }
+
+        [JsonProperty("")]
+        public string? name { get; set; }
+
+        [JsonProperty("")]
+        public string? release_date { get; set; }
+
+        [JsonProperty("")]
+        public string? release_date_precision { get; set; }
+
+        [JsonProperty("")]
+        public ResumePointObject? resume_point { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+
+        [JsonProperty("")]
+        public string? uri { get; set; }
+    }
+
+    public class  SimplifiedPlaylistObject
+    {
+        [JsonProperty("")]
+        public bool collaborative { get; set; }
+
+        [JsonProperty("")]
+        public string? description { get; set; }
+
+        [JsonProperty("")]
+        public ExternalUrlObject? external_urls { get; set; }
+
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public string? id { get; set; }
+
+        [JsonProperty("")]
+        public ImageObject[]? images { get; set; }
+
+        [JsonProperty("")]
+        public string? name { get; set; }
+
+        [JsonProperty("")]
+        public PublicUserObject? owner { get; set; }
+
+        [JsonProperty("")]
+        public bool @public { get; set; }
+
+        [JsonProperty("")]
+        public string? snapshot_id { get; set; }
+
+        [JsonProperty("")]
+        public PlaylistTracksRefObject? tracks { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+
+        [JsonProperty("")]
+        public string? uri { get; set; }
+    }
+
+    public class  SimplifiedShowObject
+    {
+        [JsonProperty("")]
+        public string[]? available_markets { get; set; }
+
+        [JsonProperty("")]
+        public CopyrightObject[]? copyrights { get; set; }
+
+        [JsonProperty("")]
+        public string? description { get; set; }
+
+        [JsonProperty("")]
+        public bool @explicit { get; set; }
+
+        [JsonProperty("")]
+        public ExternalUrlObject? external_urls { get; set; }
+
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public string? id { get; set; }
+
+        [JsonProperty("")]
+        public ImageObject[]? images { get; set; }
+
+        [JsonProperty("")]
+        public bool is_externally_hosted { get; set; }
+
+        [JsonProperty("")]
+        public string[]? languages { get; set; }
+
+        [JsonProperty("")]
+        public string? media_type { get; set; }
+
+        [JsonProperty("")]
+        public string? name { get; set; }
+
+        [JsonProperty("")]
+        public string? publisher { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+
+        [JsonProperty("")]
+        public string? uri { get; set; }
+    }
+
+    public class  SimplifiedTrackObject
+    {
+        [JsonProperty("")]
+        public SimplifiedArtistObject[]? artists { get; set; }
+
+        [JsonProperty("")]
+        public string[]? available_markets { get; set; }
+
+        [JsonProperty("")]
+        public int disc_number { get; set; }
+
+        [JsonProperty("")]
+        public int duration_ms { get; set; }
+
+        [JsonProperty("")]
+        public bool @explicit { get; set; }
+
+        [JsonProperty("")]
+        public ExternalUrlObject? external_urls { get; set; }
+
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public string? id { get; set; }
+
+        [JsonProperty("")]
+        public bool is_local { get; set; }
+
+        [JsonProperty("")]
+        public bool is_playable { get; set; }
+
+        [JsonProperty("")]
+        public LinkedTrackObject? linked_from { get; set; }
+
+        [JsonProperty("")]
+        public string? name { get; set; }
+
+        [JsonProperty("")]
+        public string? preview_url { get; set; }
+
+        [JsonProperty("")]
+        public TrackRestrictionObject? restrictions { get; set; }
+
+        [JsonProperty("")]
+        public int track_number { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+
+        [JsonProperty("")]
+        public string? uri { get; set; }
+    }
+
+    public class  TrackObject
+    {
+        [JsonProperty("")]
+        public SimplifiedAlbumObject? album { get; set; }
+
+        [JsonProperty("")]
+        public ArtistObject[]? artists { get; set; }
+
+        [JsonProperty("")]
+        public string[]? available_markets { get; set; }
+
+        [JsonProperty("")]
+        public int disc_number { get; set; }
+
+        [JsonProperty("")]
+        public int duration_ms { get; set; }
+
+        [JsonProperty("")]
+        public bool @explicit { get; set; }
+
+        [JsonProperty("")]
+        public ExternalIdObject? external_ids { get; set; }
+
+        [JsonProperty("")]
+        public ExternalUrlObject? external_urls { get; set; }
+
+        [JsonProperty("")]
+        public string? href { get; set; }
+
+        [JsonProperty("")]
+        public string? id { get; set; }
+
+        [JsonProperty("")]
+        public bool is_local { get; set; }
+
+        [JsonProperty("")]
+        public bool is_playable { get; set; }
+
+        [JsonProperty("")]
+        public TrackObject? linked_from { get; set; }
+
+        [JsonProperty("")]
+        public string? name { get; set; }
+
+        [JsonProperty("")]
+        public int popularity { get; set; }
+
+        [JsonProperty("")]
+        public string? preview_url { get; set; }
+
+        [JsonProperty("")]
+        public TrackRestrictionObject? restrictions { get; set; }
+
+        [JsonProperty("")]
+        public int track_number { get; set; }
+
+        [JsonProperty("")]
+        public string? type { get; set; }
+
+        [JsonProperty("")]
+        public string? uri { get; set; }
+    }
+
+    public class  TrackRestrictionObject
+    {
+        [JsonProperty("")]
+        public string? reason { get; set; }
+    }
+
+    public class  TuneableTrackObject
+    {
+        [JsonProperty("")]
+        public float acousticness { get; set; }
+
+        [JsonProperty("")]
+        public float danceability { get; set; }
+
+        [JsonProperty("")]
+        public int duration_ms { get; set; }
+
+        [JsonProperty("")]
+        public float energy { get; set; }
+
+        [JsonProperty("")]
+        public float instrumentalness { get; set; }
+
+        [JsonProperty("")]
+        public int key { get; set; }
+
+        [JsonProperty("")]
+        public float liveness { get; set; }
+
+        [JsonProperty("")]
+        public float loudness { get; set; }
+
+        [JsonProperty("")]
+        public int mode { get; set; }
+
+        [JsonProperty("")]
+        public float popularity { get; set; }
+
+        [JsonProperty("")]
+        public float speechiness { get; set; }
+
+        [JsonProperty("")]
+        public float tempo { get; set; }
+
+        [JsonProperty("")]
+        public int time_signature { get; set; }
+
+        [JsonProperty("")]
+        public float valence { get; set; }
+    }
+}
