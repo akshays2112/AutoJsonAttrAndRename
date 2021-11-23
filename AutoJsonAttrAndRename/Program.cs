@@ -36,4 +36,5 @@ while((line = reader.ReadLine()) is not null)
         stringBuilder.AppendLine(line);
     }
 }
+Console.WriteLine(stringBuilder.ToString());
 Console.WriteLine("Done!!\n\n");
