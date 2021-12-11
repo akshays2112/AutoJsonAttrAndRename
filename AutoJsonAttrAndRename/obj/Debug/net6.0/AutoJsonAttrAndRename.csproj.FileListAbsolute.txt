@@ -13,4 +13,3 @@ C:\Users\aksha\OneDrive\AkshayData\VS2022 Projects\AutoJsonAttrAndRename\AutoJso
 C:\Users\aksha\OneDrive\AkshayData\VS2022 Projects\AutoJsonAttrAndRename\AutoJsonAttrAndRename\obj\Debug\net6.0\ref\AutoJsonAttrAndRename.dll
 C:\Users\aksha\OneDrive\AkshayData\VS2022 Projects\AutoJsonAttrAndRename\AutoJsonAttrAndRename\obj\Debug\net6.0\AutoJsonAttrAndRename.pdb
 C:\Users\aksha\OneDrive\AkshayData\VS2022 Projects\AutoJsonAttrAndRename\AutoJsonAttrAndRename\obj\Debug\net6.0\AutoJsonAttrAndRename.genruntimeconfig.cache
-C:\Users\aksha\OneDrive\AkshayData\VS2022 Projects\AutoJsonAttrAndRename\AutoJsonAttrAndRename\obj\Debug\net6.0\AutoJsonAttrAndRename.csproj.AssemblyReference.cache
