@@ -5,7 +5,6 @@ C:\Users\aksha\OneDrive\AkshayData\VS2022 Projects\AutoJsonAttrAndRename\AutoJso
 C:\Users\aksha\OneDrive\AkshayData\VS2022 Projects\AutoJsonAttrAndRename\AutoJsonAttrAndRename\bin\Debug\net6.0\AutoJsonAttrAndRename.dll
 C:\Users\aksha\OneDrive\AkshayData\VS2022 Projects\AutoJsonAttrAndRename\AutoJsonAttrAndRename\bin\Debug\net6.0\ref\AutoJsonAttrAndRename.dll
 C:\Users\aksha\OneDrive\AkshayData\VS2022 Projects\AutoJsonAttrAndRename\AutoJsonAttrAndRename\bin\Debug\net6.0\AutoJsonAttrAndRename.pdb
-C:\Users\aksha\OneDrive\AkshayData\VS2022 Projects\AutoJsonAttrAndRename\AutoJsonAttrAndRename\obj\Debug\net6.0\AutoJsonAttrAndRename.csproj.AssemblyReference.cache
 C:\Users\aksha\OneDrive\AkshayData\VS2022 Projects\AutoJsonAttrAndRename\AutoJsonAttrAndRename\obj\Debug\net6.0\AutoJsonAttrAndRename.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\aksha\OneDrive\AkshayData\VS2022 Projects\AutoJsonAttrAndRename\AutoJsonAttrAndRename\obj\Debug\net6.0\AutoJsonAttrAndRename.AssemblyInfoInputs.cache
 C:\Users\aksha\OneDrive\AkshayData\VS2022 Projects\AutoJsonAttrAndRename\AutoJsonAttrAndRename\obj\Debug\net6.0\AutoJsonAttrAndRename.AssemblyInfo.cs
