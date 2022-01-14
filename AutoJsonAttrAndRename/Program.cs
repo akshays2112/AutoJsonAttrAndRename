@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+//git test comment
+
 using System;
 using System.IO;
 using System.Text;
